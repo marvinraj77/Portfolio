@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;600&display=swap');
 
 * { /* RESET */
     padding: 0;
@@ -8,7 +9,8 @@
 
 html { /* SET FONT-SIZE FOR EVERYTHING TO 10PX*/
     font-size: 10px;
-    font-family: 'Merriweather', sans-serif;
+    /* font-family: 'Merriweather'; */
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 a {
@@ -78,10 +80,15 @@ p{
 }
 #hero h1:nth-child(1){
     animation-delay: 1s;
+    font-size: 1.5rem;
 }
 #hero h1:nth-child(2){
     animation: text_reveal_name .5s ease forwards;
     animation-delay: 2s;
+}
+#hero h1:nth-child(3){
+    animation-delay: 1s;
+    font-size: 2rem;
 }
 
 #hero h1 span{
@@ -233,7 +240,7 @@ p{
 @keyframes text_reveal_name{
     100%{
         color: crimson;
-        font-weight: 500;
+        font-weight: bold;
     }
 }
 /* --------- Keyframes  --------- */
